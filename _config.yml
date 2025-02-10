@@ -1,78 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuralNets</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: #E0E0E0;
-            font-family: monospace;
-            padding: 40px;
-            max-width: 700px;
-            margin: auto;
-        }
-        a {
-            color: #64ffda;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        h1 {
-            font-size: 28px;
-        }
-        h1 span {
-            color: #64ffda;
-        }
-        h2 {
-            font-size: 22px;
-        }
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #333;
-            margin: 20px 0;
-        }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
-</head>
-<body>
-    <h1>hi, i am <span>neuralnets</span>!</h1>
-    <p>i am a second year student, studying computer science.<br>
-    mainly work in deep learning/natural language processing.</p>
-    
-    <h2>experience</h2>
-    <ul>
-        <li>intern @ ai4bharat [jan 25' - present]</li>
-        <li>winter intern @ iitx [dec 24' - jan 25']</li>
-        <li>research apprentice @ my college [jun 24' - aug 24']</li>
-    </ul>
-    
-    <h2>projects</h2>
-    <ul>
-        <li><a href="#">serious projects</a> : all my important projects</li>
-        <li><a href="#">fun projects</a> : all my fun projects</li>
-    </ul>
-    
-    <h2>research papers</h2>
-    <p>[on hold till end of 2025]</p>
-    
-    <h2>blogs</h2>
-    <ul>
-        <li><a href="#">technical blogs</a> : all my blogs about topics</li>
-        <li><a href="#">guides</a> : all my blogs on experiences</li>
-        <li><a href="#">cp algorithms i am learning</a></li>
-    </ul>
-    
-    <h2>my handwritten notes</h2>
-    
-    <footer>
-        <a href="#">github</a> | <a href="#">twitter</a>
-    </footer>
-</body>
-</html>
+title: NeuralNets
+url: "https://yourgithubusername.github.io"
+baseurl: ""
+
+# Theme settings
+theme: minima
+minima:
+  skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/yourgithubusername" }
+    - { platform: twitter, user_url: "https://twitter.com/yourtwitterhandle" }
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Experience
+    url: /experience
+  - title: Projects
+    url: /projects
+  - title: Research Papers
+    url: /research-papers
+  - title: Blogs
+    url: /blogs
+  - title: Handwritten Notes
+    url: /notes
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "NeuralNets"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Markdown processing
+markdown: kramdown
