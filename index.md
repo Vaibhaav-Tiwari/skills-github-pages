@@ -1,5 +1,46 @@
----
-title: finally chal ja laude
----
+title: NeuralNets
+url: "https://yourgithubusername.github.io"
+baseurl: ""
 
-wkevfubuikwyufvf
+# Theme settings
+theme: minima
+minima:
+  skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/yourgithubusername" }
+    - { platform: twitter, user_url: "https://twitter.com/yourtwitterhandle" }
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Experience
+    url: /experience
+  - title: Projects
+    url: /projects
+  - title: Research Papers
+    url: /research-papers
+  - title: Blogs
+    url: /blogs
+  - title: Handwritten Notes
+    url: /notes
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "NeuralNets"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Markdown processing
+markdown: kramdown
